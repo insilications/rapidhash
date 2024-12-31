@@ -54,7 +54,7 @@
   #define RAPIDHASH_NOEXCEPT noexcept
   #define RAPIDHASH_CONSTEXPR constexpr
   #ifndef RAPIDHASH_INLINE
-    #define RAPIDHASH_INLINE inline
+    #define RAPIDHASH_INLINE inline __attribute__((always_inline))
   #endif
 #else
   #define RAPIDHASH_NOEXCEPT
